@@ -11,12 +11,75 @@
 <body>
 
     <h1>Shawt - Free & Easy to use URL Shortener</h1>
+    <form action="/createurl" method="GET">
+        <p id="base">https://shawt.cf/</p><input id="name" name="name" placeholder="example" required />
+        <input id="redirect" name="redirect" placeholder="Redirect URL (https://example.com)" required />
+        <input type="submit" value="Create!" id="submitbtn">
+    </form>
 
 </body>
 
 <style>
     body {
-        background-image: url(https://i.pinimg.com/originals/76/46/5b/76465be29d569c472727be6a411ad880.png)
+        background-image: url(https://i.pinimg.com/originals/76/46/5b/76465be29d569c472727be6a411ad880.png);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    h1 {
+        opacity: 80%;
+        position: absolute;
+        left: 23%;
+    }
+    
+    #base {
+        position: absolute;
+        top: 39.5%;
+        left: 32%;
+        font-size: 20px;
+    }
+    
+    #name {
+        position: absolute;
+        top: 42.3%;
+        left: 42.5%;
+        background: none;
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+        font-size: 20px;
+        outline: none;
+        color: white;
+    }
+    
+    #redirect {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        width: 20rem;
+        background: none;
+        border: none;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        font-size: 20px;
+    }
+    
+    #submitbtn {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        width: 10rem;
+        background-color: black;
+        opacity: 70%;
+        color: white;
+        font-size: 30px;
+        height: 60px;
+        outline: none;
+    }
+    
+    #submitbtn:hover {
+        background-color: white;
+        color: black;
     }
 </style>
 
